@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Contact
+
+# Model Form Field configuration
+form: $/lime/forms/models/contact/fields.yaml
+
+# Model Class name
+modelClass: Lime\Forms\Models\Contact
+
+# Default redirect location
+defaultRedirect: lime/forms/contacts
+
+# Create page
+create:
+    title: Create Contact
+    redirect: lime/forms/contacts/update/:id
+    redirectClose: lime/forms/contacts
+
+# Update page
+update:
+    title: Edit Contact
+    redirect: lime/forms/contacts
+    redirectClose: lime/forms/contacts
+
+# Preview page
+preview:
+    title: Preview Contact

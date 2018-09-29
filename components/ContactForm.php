@@ -8,8 +8,8 @@ class ContactForm extends ComponentBase
 {
     public function componentDetails() {
       return [
-          'name'        => 'lime.forms::lang.component_name',
-          'description' => 'lime.forms::lang.component_description'
+        'name' => 'lime.forms::lang.component_name',
+        'description' => 'lime.forms::lang.component_description'
       ];
     }
 

@@ -77,18 +77,21 @@ class Plugin extends PluginBase
      *
      * @return array
      */
-    public function registerNavigation()
-    {
-        return []; // Remove this line to activate
+    public function registerNavigation() {
+      return [
+        'Forms' => [
+          'label' => 'Forms',
+          'icon' => 'icon-list-alt',
+          'url' => Backend::url('lime/forms/contacts'),
+          'permissions' => ['lime.forms.*'],
 
-        return [
-            'forms' => [
-                'label'       => 'forms',
-                'url'         => Backend::url('lime/forms/mycontroller'),
-                'icon'        => 'icon-leaf',
-                'permissions' => ['lime.forms.*'],
-                'order'       => 500,
-            ],
-        ];
+          'contacts' => [
+            'label' => 'Contacts',
+            'icon' => 'icon-list-alt',
+            'url' => Backend::url('lime/forms/contacts'),
+            'permissions' => ['lime.forms.*']
+          ]
+        ]
+      ];
     }
 }
